@@ -1,0 +1,75 @@
+.realtime-data {
+  padding: 4rem 0;
+  background: white;
+}
+
+.data-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.refresh-info {
+  display: flex;
+  align-items: center;
+  color: #6c757d;
+}
+
+.refresh-info i {
+  margin-right: 8px;
+  color: #20c997;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.data-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  border-left: 4px solid #1a6fb4;
+}
+
+.data-card.critical {
+  border-left-color: #ff6b6b;
+}
+
+.data-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: #2d3e50;
+}
+
+.data-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a6fb4;
+}
+
+.data-card.critical .data-value {
+  color: #ff6b6b;
+}
+
+.data-unit {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .data-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .refresh-info {
+    margin-top: 1rem;
+  }
+}
