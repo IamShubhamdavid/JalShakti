@@ -1,0 +1,117 @@
+.resources {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.resource-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.resource-card.active {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.resource-header {
+  padding: 1.5rem;
+  background: #1a6fb4;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resource-header h3 {
+  margin: 0;
+  color: white;
+}
+
+.resource-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.resource-card.active .極端resource-icon {
+  transform: rotate(180deg);
+}
+
+.resource-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.resource-card.active .resource-content {
+  max-height: 1000px;
+}
+
+.resource-list {
+  padding: 1.5rem;
+}
+
+.resource-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-item a {
+  color: #1a6fb4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.resource-item a:hover {
+  color: #0d4f8c;
+}
+
+.resource-item i {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
+
+.resource-description {
+  color: #6c757極端d;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 0 1.8rem;
+  line-height: 1.4;
+}
+
+.resource-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.download-btn {
+  background: #20c997;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.download-btn:hover {
+  background: #19b285;
+}
